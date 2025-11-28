@@ -1,0 +1,101 @@
+.Testimonials{
+margin:80px auto;
+padding:0 80px;
+position: relative;
+}
+
+.naxt-btn,.back-btn{
+
+    position: absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+    padding:15px;
+    width:50px;
+    border-radius: 50%;
+    cursor:pointer;
+    background-color: #212ea0;
+}
+.back-btn{
+    right: auto;
+    left:0;
+}
+.slider{
+    overflow: hidden;
+
+}
+.slider ul{
+    display:flex;
+    width:200%;
+    overflow-x:hidden;
+    transition:0.5s;
+    /* transform: translateX(-15%); */
+  }
+/* Note: */
+/* this transform will move the slides to show different testimonials for the percentage value change it accordingly
+it has to be in multiples of 25% as there are 4 slides */
+
+
+
+  .slider ul li{
+    width:50%;
+    list-style: none;
+    padding:20px;
+  }
+  .slide{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding:40px;
+    border-radius: 10px;
+    color:#676767;
+  line-height: 1.4;
+  }
+  .slide img{
+    width:65px;
+    border-radius:50%;
+    margin-right: 10px;
+    border:4px solid  #212ea0;
+  }
+  .user-info{
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+    font-size: 15px;
+  }
+  .user-info h3{
+    color:#212ea0;
+  }
+
+
+@media(max-width:800px){
+  .Testimonials{
+    padding:0 40px;
+  }
+ .naxt-btn,
+ .back-btn{
+  padding:10px;
+  width:35px;
+ }
+.Testimonials ul li{
+  padding:10px;
+}
+.slide{
+padding: 10px;
+}
+.slide img{
+  width:50px;
+  border:3px solid #212EA0;
+}
+@media (max-width:600px){
+  .user-info{
+    display:block;
+    margin-bottom:10px;
+    font-size:12px;
+
+}
+.user-info h3{
+  font-size:16px;
+}
+.slide p{
+  font-size:16px;
+}
+}}
